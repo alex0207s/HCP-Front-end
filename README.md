@@ -1,9 +1,7 @@
 # HCP-Front-end
 Curriculum: Database Management 2020 Spring </br>
 
-In this course, we're assigned the final project to create an website.</br>
-
-We chosen to create an website for our club, HCP.</br>
+In this course, we're assigned the final project to create an website.We chosen to create an website for our club, HCP.</br>
 
 HCP is an acronym for "Happiness Color Programming".</br>
 
