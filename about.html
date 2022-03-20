@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - About</title>
+  <link rel="stylesheet" href="./about.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="overlay" id="overlay"></div>
+<div class="top_bar">
+  <!-- menu-->
+  <div id="sidebar" onclick="show()">
+    <div class="toggle-btn" id="toggle-btn"><span id="menu-item"></span><span id="menu-item"></span><span id="menu-item"></span></div>
+    <ul>
+      <li> <a href="">About</a></li>
+      <li> <a href="">Videos</a></li>
+      <li> <a href="">Courses</a></li>
+      <li> <a href="">Chat room</a></li>
+    </ul>
+  </div>
+  <!--logo--><a class="logo" id="logo" href="/"></a>
+  <!--user-->
+  <script src="https://use.fontawesome.com/f58b366451.js"></script>
+  <div class="user-container" id="user_info_pane">
+    <div class="user-title" onClick="toggleUserInfo('open')"><span class="username">廖崇幃</span>
+      <div class="user-image"></div><span class="howto"><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="user-info">
+      <ul class="user-info-list">
+        <li class="user-info-list-item" id="setting" onClick="toggleUserInfo('setting')">Profile<a class="fa fa-user" href="" aria-hidden="true"></a></li>
+        <li class="user-info-list-item" id="setting" onClick="toggleUserInfo('name')">Code<a class="fa fa-code" href="" aria-hidden="true"></a></li>
+        <li class="user-info-list-item" id="setting" onClick="toggleUserInfo('message')">Message<a class="fa fa-envelope" href="" aria-hidden="true"></a></li>
+        <li class="user-info-list-item" id="logout" onClick="toggleUserInfo('logout')">Logout<a class="fa fa-sign-out" href="" aria-hidden="true"></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="timeline">
+  <div class="circle"></div>
+  <ul>
+    <li>
+      <h3>關於HCP名字的由來</h3>
+      <p>HCP 縮寫來自 Happiness Color Programming ，創意發想來自我們對於程式的熱</p>
+      <p>愛，每個人都有自己喜歡或擅長的應用，有些人喜歡透過寫網頁、寫app或是寫各種</p>
+      <p>形式的專案，來解決身邊各種大小問題。正因如此我們希望找到擅長不同能力的人聚</p>
+      <p>在一起，綻放屬於自己的顏色，就像彩虹一樣匯集7種顏色才能展現獨一無二的美。</p>
+      <p class="slogan">What is the color representing happiness in your programming?</p>
+    </li>
+    <li>
+      <H3>HCP在做甚麼</H3>
+      <p>我們希望藉由這個社團匯集系上喜歡寫程式的同學或是學長姐，一</p>
+      <p>起分享自己在大學的所學，透過同儕之間的分享，拉近系上的距離</p>
+      <p>也能夠精進自己的能力。</p>
+    </li>
+    <li>
+      <H3>HCP的社團進行形式</H3>
+      <p>目前的形式是學長姐帶著學弟妹學不同的主題，內容相當廣泛，有python、寫app及網站</p>
+      <p>的教學等。等大家能廣泛運用手邊工具後，希望能找到志同道合的人一起參加校外比賽</p>
+    </li>
+    <li>
+      <H3>HCP未來展望</H3>
+      <p>希望能增進大家程式的水平，能把程式能力帶進自己</p><strong>的生活，甚至豐富自己大學的生活，同時也增加自己以後就業的履歷</strong>
+    </li>
+  </ul>
+  <div class="circle"></div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./about.css"></script>
+
+</body>
+</html>

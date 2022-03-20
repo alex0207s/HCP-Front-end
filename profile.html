@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Profile</title>
+  <link rel="stylesheet" href="./profile.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<name class="overlay" id="overlay"></name>
+<div class="top_bar">
+  <!-- menu-->
+  <div id="sidebar" onclick="show()">
+    <div class="toggle-btn" id="toggle-btn"><span id="menu-item"></span><span id="menu-item"></span><span id="menu-item"></span></div>
+    <ul>
+      <li> <a href="">About</a></li>
+      <li> <a href="">Videos</a></li>
+      <li> <a href="">Courses</a></li>
+      <li> <a href="">Chat room</a></li>
+    </ul>
+  </div>
+  <!--logo--><a class="logo" id="logo" href="/"></a>
+  <!--user-->
+  <script src="https://use.fontawesome.com/f58b366451.js"></script>
+  <div class="user-container" id="user_info_pane">
+    <div class="user-title" onClick="toggleUserInfo('open')"><span class="username">廖崇幃</span>
+      <div class="user-image"></div><span class="howto"><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="user-info">
+      <ul class="user-info-list">
+        <li class="user-info-list-item" id="setting" onClick="toggleUserInfo('setting')">Profile<i class="fa fa-user" aria-hidden="true"></i></li>
+        <li class="user-info-list-item" id="setting" onClick="toggleUserInfo('name')">Code<i class="fa fa-code" aria-hidden="true"></i></li>
+        <li class="user-info-list-item" id="setting" onClick="toggleUserInfo('message')">Message<i class="fa fa-envelope" aria-hidden="true"></i></li>
+        <li class="user-info-list-item" id="logout" onClick="toggleUserInfo('logout')">Logout<i class="fa fa-sign-out" aria-hidden="true"></i></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="profile_card">
+  <div class="card_left">
+    <div class="bg"></div><img class="profile_photo" id="profile_photo"/>
+    <h2 id="porfile_username">廖崇幃</h2>
+    <div class="profile_skill">
+      <div class="skill">
+        <div class="icon" id="icon1"></div>
+        <div class="progress_bar">
+          <div class="progress" id="progress1"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="icon" id="icon2"></div>
+        <div class="progress_bar">
+          <div class="progress" id="progress2"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="icon" id="icon3"></div>
+        <div class="progress_bar">
+          <div class="progress" id="progress3"></div>
+        </div>
+      </div>
+    </div>
+    <div class="profile_trait">
+      <div class="trait_show">
+        <h4 id="profile_trait1"></h4>
+      </div>
+      <div class="trait_show">
+        <h4 id="profile_trait2"> </h4>
+      </div>
+      <div class="trait_show">
+        <h4 id="profile_trait3"> </h4>
+      </div>
+    </div>
+  </div>
+  <div class="card_right">
+    <div class="block_top"><img class="update_photo" id="photo"/>
+      <div class="hint">
+        <h2>Update a new photo</h2>
+        <p>test.jpg</p>
+      </div>
+      <button class="update_btn"> 
+        <input id="upload_photo" type="file"/>
+        <label for="upload_photo">上傳</label>
+      </button>
+    </div>
+    <div class="block_buttom">
+      <h3>基本資料</h3>
+      <form name="form">
+        <div class="form_row"><span>
+            <input class="clean-slide" name="username" type="text" placeholder="Change Your Name Here!"/>
+            <label for="username">Name</label></span>
+          <div class="password"><a href=""> </a></div>
+        </div>
+        <div class="form_row"><span>
+            <input class="clean-slide" id="github" name="github" type="url" placeholder="Input Your GitHub url Here"/>
+            <label for="github">GitHub</label></span></div>
+        <div class="form_skill">
+          <h3>擅長的程式語言</h3>
+          <div class="skill_block">
+            <h4>專長一</h4>
+            <div class="skill_option">
+              <select id="language1">
+                <option value="https://cdn.iconscout.com/icon/free/png-256/c-programming-569564.png">C</option>
+                <option value="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQw85eX0l0cbo9RTg_k1GO3I6yGR5PPxLPCTP1bSZtxHljprLqn&amp;usqp=CAU">C++</option>
+                <option value="https://cdn.worldvectorlogo.com/logos/c--4.svg">C#</option>
+                <option value="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png">Python</option>
+                <option value="https://cdn.iconscout.com/icon/free/png-512/java-43-569305.png">Java</option>
+                <option value="https://cdn.worldvectorlogo.com/logos/kotlin-1.svg">Kotlin</option>
+                <option value="https://cdn.worldvectorlogo.com/logos/solidity.svg">Solidity</option>
+                <option value="https://image.flaticon.com/icons/svg/1216/1216733.svg">html</option>
+                <option value="https://cdn.worldvectorlogo.com/logos/javascript-1.svg">java script</option>
+                <option value="https://www.kindpng.com/picc/m/464-4640184_css3-png-download-css-icon-transparent-png.png">css</option>
+                <option value="https://keras.io/img/keras-logo-small.jpg">keras</option>
+                <option value="https://pytorch.org/assets/images/pytorch-logo.png">pytorch</option>
+                <option value="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/1200px-Tensorflow_logo.svg.png">tensorflow</option>
+              </select>
+              <select id="score1">
+                <option value="20%">1</option>
+                <option value="40%">2</option>
+                <option value="60%">3</option>
+                <option value="80%">4</option>
+                <option value="100%">5</option>
+              </select>
+            </div>
+            <h4>專長二</h4>
+            <div class="skill_option">
+              <select id="language2">
+                <option value="https://cdn.iconscout.com/icon/free/png-256/c-programming-569564.png">C</option>
+                <option value="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQw85eX0l0cbo9RTg_k1GO3I6yGR5PPxLPCTP1bSZtxHljprLqn&amp;usqp=CAU">C++</option>
+                <option value="https://cdn.worldvectorlogo.com/logos/c--4.svg">C#</option>
+                <option value="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png">Python</option>
+                <option value="https://cdn.iconscout.com/icon/free/png-512/java-43-569305.png">Java</option>
+                <option value="https://cdn.worldvectorlogo.com/logos/kotlin-1.svg">Kotlin</option>
+                <option value="https://cdn.worldvectorlogo.com/logos/solidity.svg">Solidity</option>
+                <option value="https://image.flaticon.com/icons/svg/1216/1216733.svg">html</option>
+                <option value="https://cdn.worldvectorlogo.com/logos/javascript-1.svg">java script</option>
+                <option value="https://www.kindpng.com/picc/m/464-4640184_css3-png-download-css-icon-transparent-png.png">css</option>
+                <option value="https://keras.io/img/keras-logo-small.jpg">keras</option>
+                <option value="https://pytorch.org/assets/images/pytorch-logo.png">pytorch</option>
+                <option value="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/1200px-Tensorflow_logo.svg.png">tensorflow</option>
+              </select>
+              <select id="score2">
+                <option value="20%">1</option>
+                <option value="40%">2</option>
+                <option value="60%">3</option>
+                <option value="80%">4</option>
+                <option value="100%">5</option>
+              </select>
+            </div>
+            <h4>專長三</h4>
+            <div class="skill_option">
+              <select id="language3">
+                <option value="https://cdn.iconscout.com/icon/free/png-256/c-programming-569564.png">C</option>
+                <option value="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQw85eX0l0cbo9RTg_k1GO3I6yGR5PPxLPCTP1bSZtxHljprLqn&amp;usqp=CAU">C++</option>
+                <option value="https://cdn.worldvectorlogo.com/logos/c--4.svg">C#</option>
+                <option value="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png">Python</option>
+                <option value="https://cdn.iconscout.com/icon/free/png-512/java-43-569305.png">Java</option>
+                <option value="https://cdn.worldvectorlogo.com/logos/kotlin-1.svg">Kotlin</option>
+                <option value="https://cdn.worldvectorlogo.com/logos/solidity.svg">Solidity</option>
+                <option value="https://image.flaticon.com/icons/svg/1216/1216733.svg">html</option>
+                <option value="https://cdn.worldvectorlogo.com/logos/javascript-1.svg">java script</option>
+                <option value="https://www.kindpng.com/picc/m/464-4640184_css3-png-download-css-icon-transparent-png.png">css</option>
+                <option value="https://keras.io/img/keras-logo-small.jpg">keras</option>
+                <option value="https://pytorch.org/assets/images/pytorch-logo.png">pytorch</option>
+                <option value="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/1200px-Tensorflow_logo.svg.png">tensorflow</option>
+              </select>
+              <select id="score3">
+                <option value="20%">1</option>
+                <option value="40%">2</option>
+                <option value="60%">3</option>
+                <option value="80%">4</option>
+                <option value="100%">5</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form_trait">
+          <h3>用三個形容詞形容個人特質</h3>
+          <div class="trait_input"><span>
+              <input class="clean-slide" name="trait1" type="text" placeholder="Go for the high score!"/>
+              <label for="trait1">特質一</label></span><span>
+              <input class="clean-slide" name="trait2" type="text" placeholder="Go for the high score!"/>
+              <label for="trait2">特質二</label></span><span>
+              <input class="clean-slide" name="trait3" type="text" placeholder="Go for the high score!"/>
+              <label for="trait3">特質三</label></span></div>
+        </div>
+        <div class="save_btn" onclick="processFormData()"> 
+          <label>儲存</label>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script><script  src="./profile.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Courses</title>
+  <link rel="stylesheet" href="./course.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="overlay" id="overlay"></div>
+<div class="top_bar">
+  <!-- menu-->
+  <div id="sidebar" onclick="show()">
+    <div class="toggle-btn" id="toggle-btn"><span id="menu-item"></span><span id="menu-item"></span><span id="menu-item"></span></div>
+    <ul>
+      <li> <a href="">About</a></li>
+      <li> <a href="">Videos</a></li>
+      <li> <a href="">Courses</a></li>
+      <li> <a href="">Chat room</a></li>
+    </ul>
+  </div>
+  <!--logo--><a class="logo" id="logo" href="/"></a>
+  <!--user-->
+  <script src="https://use.fontawesome.com/f58b366451.js"></script>
+  <div class="user-container" id="user_info_pane">
+    <div class="user-title" onClick="toggleUserInfo('open')"><span class="username">廖崇幃</span>
+      <div class="user-image"></div><span class="howto"><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="user-info">
+      <ul class="user-info-list">
+        <li class="user-info-list-item" id="setting" onClick="toggleUserInfo('setting')">Profile<a class="fa fa-user" href="" aria-hidden="true"></a></li>
+        <li class="user-info-list-item" id="setting" onClick="toggleUserInfo('name')">Code<a class="fa fa-code" href="" aria-hidden="true"></a></li>
+        <li class="user-info-list-item" id="setting" onClick="toggleUserInfo('message')">Message<a class="fa fa-envelope" href="" aria-hidden="true"></a></li>
+        <li class="user-info-list-item" id="logout" onClick="toggleUserInfo('logout')">Logout<a class="fa fa-sign-out" href="" aria-hidden="true"></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="cards">
+  <div class="card">
+    <div class="cover cover1">
+      <div class="circle circle1"></div>
+    </div>
+    <div class="title"> 
+      <h1>玩轉Flutter開發</h1>
+    </div>
+    <div class="bottom">
+      <div class="progress_bar"></div>
+      <div class="link"><a class="linker" href="">start !</a></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="cover cover2">
+      <div class="circle circle2"></div>
+    </div>
+    <div class="title"> 
+      <h1>Python 機器學習初探</h1>
+    </div>
+    <div class="bottom">
+      <div class="progress_bar"></div>
+      <div class="link"><a class="linker" href="">start !</a></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="cover cover3">
+      <div class="circle circle3"></div>
+    </div>
+    <div class="title"> 
+      <h1>html 輕鬆入門</h1>
+    </div>
+    <div class="bottom">
+      <div class="progress_bar"></div>
+      <div class="link"><a class="linker" href="">start !</a></div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./course.js"></script>
+
+</body>
+</html>
