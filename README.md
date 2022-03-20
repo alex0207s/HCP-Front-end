@@ -5,8 +5,8 @@ In this course, we're assigned the final project to create an website.We chosen 
 
 HCP is an acronym for "Happiness Color Programming".</br>
 
-Why we took this name ? visit "About" page in our club website.</br>
+Why we took this name ? Please visit "About" page in our club website.</br>
 
-Note: This repo recorded the page I wrote, not all page.
+Note: This repo record the page I wrote, not all web pages.
 
-Visit Website : https://alex0207s.github.io/HCP-Front-end/
+Visit website : https://alex0207s.github.io/HCP-Front-end/
